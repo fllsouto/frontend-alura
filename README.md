@@ -1,6 +1,6 @@
 ## FrontEnd Alura Course
 
-###HTML5 e CSS3 1
+###HTML5 and CSS3 1
 - [x] Class 1
 - [x] Class 2
 - [x] Class 3
