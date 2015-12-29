@@ -6,6 +6,7 @@
 - [x] Class 3
 - [x] Class 4
 - [x] Class 5
+- [x] Revision
 - [ ] Class 6
 - [ ] Class 7
 - [ ] Class 8

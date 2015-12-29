@@ -80,10 +80,48 @@ Esse estilo define qual fonte será utilizada, caso ela não exista no navegador
 </nav>
 ```
 
+#### HTML Semântico
+Informações bem descritas sobre a página
 
+#### Hierarquia de seletores
 
+```HTML
+//Com o espaço eu consigo selecionar hierarquicamente a qual seletor eu quero aplicar um dado estilo
+main h1 {
+	
+}
+```
+#### Entidades HTML
+São úteis para caracteres especiais : **&copy = ©**
 
+#### Redirecionamento
 
+Dado que estou no endereço http://www.meusite.com/blog.html se eu clicar no link abaixo o navegador irá mudar apenas o final da URL, isso se chama **link relativo**
+```HMTL
+<a href="portifolio.html">Meu Portifólio</a>
+```
+Um **link absoluto** é uma URL completa. Posso ter links relativos em hierarquicas
+- /portifolio.html
+- /post/html5-e-css3.html
+
+#### [Box Model](https://developer.mozilla.org/pt-BR/docs/Web/CSS/box_model)
+Padding : Espaçamento do texto/conteudo para a caixa onde ele está contido.
+
+Border : Cria uma borda na caixa de texto. Seus parâmetros são: **o tamanho da borda, o tipo do tracejado e a cor.**
+
+Quando definimos um width para o conteudo para o conteudo nem sempre pode ser calcuado da forma que esperamos. Pode ser necessário aplicar uma regra **box-sizing: border box** para dizer que todos aqueles elementos somam o nosso width
+
+```
+main div {
+	width: 750 px;
+  margin: 0 auto;
+}
+// <--Auto-->|--div[750]--|<--Auto-->
+```
+
+- O navegador aplica estilos por default na página
+- Eu posso definir um arquivo **reset.css** que irá servir como base do estilo. Esse arquivo remove a maioria dos estios deifnidos pelos navegadores Isso forece um ponto de partida consistente para definir outros CSS
+- O navegador importa o CSS na ordem que está definido no **Head**. Nessa sequência acontece também a sobrescrita dos estilos. O navegador pode sobrescrever pela **especificidade** também.
 
 
 
